@@ -1,0 +1,30 @@
+/*************************** Theme Colours****************************/
+
+// Define theme colour scheme
+$theme-color-primary: #fe655c; 
+$theme-color-secondary: #629feb;
+$theme-text-color-primary: #d7dde9; 
+$theme-text-color-secondary: #a5b3ce; 
+$theme-text-color-light: rgba(256, 256, 256, 0.3);
+
+$theme-bg-primary: #19202e; 
+$theme-bg-secondary: lighten($theme-bg-primary, 3%);
+$theme-bg-light: lighten($theme-bg-primary, 30%);
+$theme-border-color: rgba($theme-text-color-primary, 0.1);
+$theme-error: #D9603C;
+
+
+/*************************** Variables Section. *****************************/
+// Create variables to override the default value for variables used in the Bootstrap SCSS files.
+
+
+/* Override BS5 sass color */
+$primary: $theme-color-primary;
+$secondary: $theme-bg-light;
+
+/*************************** Import Bootstrap  *****************************/
+@import "bootstrap/scss/bootstrap.scss";
+
+/*************************** Theme Styles Section ****************************/
+@import "theme/styles.scss"
+

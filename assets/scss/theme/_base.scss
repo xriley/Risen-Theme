@@ -1,0 +1,126 @@
+/* ============= Base ============= */
+
+/*********** Theme Generic **********/
+body { 
+    color: $theme-text-color-secondary;
+    background: $theme-bg-primary;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $theme-text-color-primary;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+a {
+	color: $theme-color-secondary;
+	text-decoration: none;
+	
+	&:hover {
+		color: lighten($theme-color-secondary, 2%);
+		text-decoration: underline;
+	}
+
+}
+
+
+.text-highlight {
+	color: $theme-color-secondary !important;
+	font-weight: 600;
+}
+
+
+small {
+	font-size: 0.75rem;
+}
+
+
+.btn, a.btn {
+	font-weight: bold;
+	padding: 0.675rem 1.5rem;
+	font-size: 1rem;
+	outline: none;
+	@include border-radius(2rem);
+	text-decoration: none;
+	svg {
+		stroke-width: 2px;
+		margin-left: 0.25rem;
+	}
+}
+
+.btn:focus, .btn.focus, .btn:active {
+	box-shadow: none !important;
+	@include transition(all 0.4s ease-in-out);
+	outline: none;
+}
+
+.btn-primary {
+	color: #fff;
+	background: $theme-color-primary;
+	&:hover, &:active {
+		color: white;
+		background: darken($theme-color-primary, 5%);
+		border-color: darken($theme-color-primary, 5%);
+	}
+	svg {
+		stroke-width: 2px;
+	}
+}
+
+
+
+
+/* Layout */
+.top-bar {
+	min-height: 60px;
+	padding-top: 1rem;
+	.top-bar-cta {
+		position: absolute;
+		right: 0;
+		padding: 0.5rem 1.25rem;
+		font-size: 0.875rem;
+		
+	}
+}
+
+
+
+.social-list {
+
+	a {
+		width: 38px;
+		height: 38px;
+		padding-top: 6px;
+		font-size: 17px;
+		display: inline-block;
+		text-align: center;
+		@include border-radius(50%);		
+		background: rgba(0, 0, 0, 0.1);
+		color: $theme-text-color-secondary;
+		
+		&:hover, &:focus {
+			color: $theme-color-secondary;
+			background: rgba(0, 0, 0, 0.2);
+			@include transition(all 0.4s ease-in-out);
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+.footer {
+	.copyright {
+		a {
+			color: $theme-text-color-secondary;
+		}
+	}
+}
+

@@ -1,0 +1,251 @@
+/* ============= Resume Page  ============= */
+.resume-wrapper {
+	margin-top: 90px;
+	position: relative;
+    padding-top: calc(75px + 1rem);
+    background: $theme-bg-secondary;
+}
+
+.resume-profile-pic {
+	max-width: 160px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	top: -80px;
+	border: 8px solid $theme-bg-secondary;
+}
+
+
+.resume-name {
+	letter-spacing: 0.5rem;
+	font-size: 2.25rem;
+	color: white;
+	font-weight: 900;
+}
+
+.resume-role-title {
+	font-size: 1.125rem;
+	letter-spacing: 0.25rem;
+	color: $theme-text-color-secondary;
+	font-weight: 500;
+}
+
+.resume-body {
+	.col-main {
+		border-right: 1px solid rgba(256, 256, 256, 0.2);
+	}
+}
+
+.resume-section {
+	margin-bottom: 2rem;
+}
+
+
+.resume-section-heading {
+	font-size: 1.125rem;
+	letter-spacing: 0.15rem;
+	color: white;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+}
+
+.resume-section-heading-icon {
+	@include border-radius(50%);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 38px;
+	height: 38px;
+	padding-left: 0.15rem;
+	background: rgba(0, 0, 0, 0.15);
+	font-size: 1.125rem;
+	color: $theme-text-color-primary;
+}
+
+.resume-contact {
+	border-top: 1px solid rgba(256, 256, 256, 0.2);
+	border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+	padding: 1rem;
+	font-size: 0.875rem;
+}
+
+.resume-contact-icon {
+	font-size: 1.125rem;
+	vertical-align: middle;
+}
+
+.resume-timeline {
+	padding-left: 2.5rem;
+	&:before {
+		content: "";
+		display: inline-block;
+	    width: 3px;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.1);
+	    left: 13px;
+	    top: 16px;
+	    position: absolute;
+	}
+	
+}
+
+.resume-position-meta {
+	font-size: 0.75rem;
+}
+.resume-company-name {
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0.2rem 0.5rem;
+	@include border-radius(0.25rem);
+	font-weight: 600;
+	
+}
+
+.resume-position-title {
+	font-size: 1.125rem;
+	color: white;
+}
+
+.resume-timeline-item {
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: -30px;
+		top: 3px;
+		width: 10px;
+		height: 10px;
+		border: 2px solid $theme-text-color-secondary;
+		background: rgba(0, 0, 0, 0.3);
+		@include border-radius(50%);
+	}
+}
+
+.resume-timeline-list {
+	padding-left: 1rem;
+	li {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.resume-degree {
+	color: white;
+	font-weight: bold;
+	font-size: 0.875rem;
+}
+.resume-degree-org {
+	font-size: 0.85rem;
+}
+.resume-degree-time {
+	font-size: 0.85rem;
+}
+
+.resume-skill-name {
+	margin-bottom: 0.25rem;
+	color: white;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+.resume-progress {
+	@include border-radius(0.25rem);
+	height: 0.3rem;
+	background: $theme-bg-primary;
+	margin-bottom: 1rem;
+}
+.resume-progress-bar {
+	@include border-radius(0.25rem);
+	background-color: darken($theme-text-color-secondary, 10%);
+}
+
+.resume-skill-badge {
+	background: $theme-bg-primary;
+	background: rgba(0,0,0, 0.1);
+	color: rgba(256, 256, 256, 0.8);
+	padding: 0.5rem 0.65rem;
+	margin-bottom: 0.5rem;
+}
+
+.resume-projects-section {
+	font-size: 0.875rem;
+	.item {
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.item-icon {
+		font-size: 0.5rem;
+		vertical-align: middle;
+		position:relative;
+		top: -1px;
+	}
+	.item-heading {
+		font-size: 1rem;
+		margin-bottom: 0.25rem;
+		
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: $theme-color-secondary;
+				text-decoration: underline;
+			}
+		}
+	}
+	.item-desc {
+		font-size: 0.85rem;;
+		padding-left: 1rem;
+	}
+}
+
+.resume-lang-name {
+	font-weight: bold;
+	color: white;
+	font-size: 0.875rem;
+}
+
+.resume-level-indicator {
+	margin-top: 2px;
+	.item {
+		width: 85%;
+		min-height: 10px;
+		@include border-radius(2px);
+		display: inline-block;	
+		background: $theme-bg-primary;
+		position: relative;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+		&.item-full {
+			background: darken($theme-text-color-secondary, 10%);
+		}
+		&.item-half {
+		
+			&:after {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				width: 50%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: darken($theme-text-color-secondary, 10%);
+				
+			}
+		}
+	}
+	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.resume-wrapper {
+		max-width: 980px;
+	}
+}
+
+
