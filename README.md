@@ -28,7 +28,7 @@ If you'd like to **use the template without the attribution link**, you can [buy
 
 
 ## Latest Version
-**v2.0** - 2023-06-26
+**v2.1** - 2024-09-16
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/risen-free-bootstrap-5-dark-mode-resume-cv-template-for-developers/?target=changelog)
 
